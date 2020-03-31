@@ -87,7 +87,7 @@ public:
     }
     ~SnekGui(){}
     virtual tsl::elm::Element* createUI() override {
-        auto rootFrame = new tsl::elm::OverlayFrame("Snek", "v0.0.2");
+        auto rootFrame = new tsl::elm::OverlayFrame("Snek", "v0.8.0");
         snake = new SnakeElement(_w,_h, tsl::gfx::Renderer::a(0xFFFF), snekBody, &apple);
         timeSinceLastFrame = std::chrono::system_clock::now();
         rootFrame->setContent(snake);
